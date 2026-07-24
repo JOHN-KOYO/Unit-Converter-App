@@ -35,8 +35,9 @@ const data = [
 convertBtnEl.addEventListener("click", function(){
      const input1 = Number(inputEl.value)
     for (let i = 0; i < data.length; i++) {
+      const{result, heading, firstUnit, secondUnit,convert1,convert2 } = data[i] 
      
-data[i].result.textContent = `${data[i].heading}\n${input1} ${data[i].firstUnit} = ${(input1 * data[i].convert1).toFixed(3)} ${data[i].secondUnit} | ${input1} ${data[i].secondUnit} = ${(input1 * data[i].convert2).toFixed(3)} ${data[i].firstUnit}`
+result.textContent = `${heading}\n${input1} ${firstUnit} = ${(input1 * convert1).toFixed(3)} ${secondUnit} | ${input1} ${secondUnit} = ${(input1 * convert2).toFixed(3)} ${firstUnit}`
     }
 })
 
