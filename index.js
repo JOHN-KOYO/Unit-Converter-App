@@ -29,6 +29,14 @@ const data = [
                     secondUnit: "pounds",
                     convert1: 2.20462,
                     convert2: 0.453592
+                },
+   {
+                    result: output3El,
+                    heading: "Mass(Kilogram/Pound)",
+                    firstUnit: "kilograms",
+                    secondUnit: "pounds",
+                    convert1: 2.20462,
+                    convert2: 0.453592
                 }
             ]
 
